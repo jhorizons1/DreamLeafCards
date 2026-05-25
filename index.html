@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamLeaf Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>DreamLeaf Cards</h1>
+    <p>Small cards with big feelings.</p>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <!-- Hidden for now <li><a href="#">Birthday</a></li>
+        <li><a href="#">Funny</a></li>
+        <li><a href="#">Animals</a></li>
+        <li><a href="#">Holiday</a></li>
+      </ul> -->
+    </nav>
+
+    <a href="#cards" class="browse-btn">Browse Cards</a>
+  </header>
+
+  <main>
+    <section id="cards" class="cards-section">
+      <h2>Featured Cards</h2>
+
+      <div class="card">
+        <img src="WhaleOfAFriend.png" alt="Whale of a Friend greeting card">
+        <h3>Whale of a Friend</h3>
+        <p>I'm lucky to swim through life with you.</p>
+        <button onclick="shareCard('Whale of a Friend')">Share Card</button>
+      </div>
+
+      <div class="card">
+        <img src="FrogLuck.png" alt="Frog wishing lots of luck" height="900" width="1250">
+        <h3>Lots of Luck</h3>
+        <p>Wishing you lots of luck!</p>
+        <button onclick="shareCard('Lots of Luck')">Share Card</button>
+      </div>
+
+      <div class="card">
+        <img src="CoffeePeace.png" alt="Coffee friendship greeting card" height="900" width="1250">
+        <h3>Coffee Together</h3>
+        <p>Sharing coffee with you is my favorite kind of peace.</p>
+        <button onclick="shareCard('Coffee Together')">Share Card</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 DreamLeaf Cards</p>
+    <p>Made with creativity and cozy vibes.</p>
+  </footer>
+
+  <script>
+    function shareCard(cardName) {
+      if (navigator.share) {
+        navigator.share({
+          title: cardName,
+          text: "Check out this card from DreamLeaf Cards!",
+          url: window.location.href
+        });
+      } else {
+        alert("Copy this page link to share the card!");
+      }
+    }
+  </script>
+
+</body>
+</html>
+    
