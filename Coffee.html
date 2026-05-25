@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Coffee Friends</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="card">
+
+    <img
+      src="CoffeePeace.png"
+      alt="Coffee Friend"
+      class="card-image"
+    />
+
+    <h1>Coffee Friends</h1>
+
+    <p class="message">
+      Thank you for being someone who makes every moment feel a little brighter.
+    </p>
+
+    <button class="share-btn" onclick="shareCard()">
+      Share This Card
+    </button>
+
+  </div>
+
+  <script>
+    function shareCard() {
+
+      if (navigator.share) {
+
+        navigator.share({
+          title: "Lucky Frog",
+          text: "Check out this greeting card!",
+          url: window.location.href
+        })
+
+        .then(() => console.log("Shared successfully"))
+        .catch((error) => console.log("Error sharing:", error));
+
+      } else {
+
+        alert("Sharing is not supported on this browser.");
+
+      }
+    }
+  </script>
+
+</body>
+</html>
