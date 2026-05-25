@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Whale of a Friend</title>
+  <title>Birthday in Space</title>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -14,20 +14,19 @@
   <div class="card">
 
     <img
-      src="WhaleOfAFriend.png"
-      alt="Whale of a Friend"
+      src="SpaceBirthday.png"
+      alt="Space birthday card"
       class="card-image"
     />
 
-    <h1>Whale of a Friend</h1>
+    <h1>Happy Birthday!!!</h1>
 
     <p class="message">
-      Thanks for always making waves of kindness wherever you go.
-      You're truly a whale of a friend!
+      May your year be filled with laughter, magic, friendship, and moments that shine as brightly as the stars.
     </p>
 
     <button class="share-btn" onclick="shareCard()">
-      Share This Card ✨
+      Share This Card
     </button>
 
   </div>
@@ -38,7 +37,7 @@
       if (navigator.share) {
 
         navigator.share({
-          title: "Whale of a Friend",
+          title: "Happy Birthday!",
           text: "Check out this greeting card!",
           url: window.location.href
         })

@@ -52,7 +52,7 @@ body {
 /* ---------- INDIVIDUAL CARD ---------- */
 
 .card {
-  background-color: white;
+  background-color: lightblue;
 
   border-radius: 20px;
   overflow: hidden;
@@ -83,6 +83,7 @@ body {
   height: auto;
   display: block;
   object-fit: contain;
+  max-height: 98vh;
 }
 
 /* ---------- TEXT ---------- */
@@ -94,4 +95,28 @@ body {
 
   margin-top: 20px;
   margin-bottom
+  }
+  
+  .share-btn {
+  	background: linear-gradient(135deg, #7b5cff, #ff7be5);
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 999px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: all 0.3s ease;
+  }
+  
+  .share-btn:hover {
+  	transform: scale(1.05);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+ }
+ 
+   .share-btn:active {
+   	transform: scale(0.97);
+   }
   
