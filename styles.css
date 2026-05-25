@@ -54,10 +54,16 @@ body {
 .card {
   background-color: white;
 
-  width: 1250px;
+  width: 90%;
 
   border-radius: 20px;
   overflow: hidden;
+  
+  width: 90%
+  
+  max-width: 1250px
+  
+  margin: 0 auto;
 
   text-align: center;
 
@@ -74,7 +80,9 @@ body {
 
 .card-image {
   width: 100%;
+  height: auto
   display: block;
+  object-fit: contain;
 }
 
 /* ---------- TEXT ---------- */
