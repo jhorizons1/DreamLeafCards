@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>You're Out of This World</title>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <div class="card">
+
+    <img
+      src="OutofThisWorld.png"
+      alt="You're out of this world"
+      class="card-image"
+    />
+
+    <h3> 🚀✨You're Out of This World ✨🚀</h3>
+
+    <p class="message">
+     You're one in a galaxy!
+    </p>
+
+    <button class="share-btn" onclick="shareCard()">
+      Share This Card ✨
+    </button>
+
+  </div>
+
+  <script>
+    function shareCard() {
+
+      if (navigator.share) {
+
+        navigator.share({
+          title: "You're Out of This World",
+          text: "Check out this greeting card!",
+          url: window.location.href
+        })
+
+        .then(() => console.log("Shared successfully"))
+        .catch((error) => console.log("Error sharing:", error));
+
+      } else {
+
+        alert("Sharing is not supported on this browser.");
+
+      }
+    }
+  </script>
+
+</body>
+</html>
