@@ -52,24 +52,21 @@ body {
 /* ---------- INDIVIDUAL CARD ---------- */
 
 .card {
-  background-color: lightblue;
-
-  border-radius: 20px;
-  overflow: hidden;
-  
   width: 90%;
-  
-  max-width: 1250px;
-  
-  height: auto;
-  
-  margin: 20px auto;
+  max-width: 500px;
+
+  margin: 30px auto;
+  padding: 15px;
+
+  background-color: #bfe4ef;
+
+  border-radius: 25px;
 
   text-align: center;
 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 
-  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -81,9 +78,10 @@ body {
 .card-image {
   width: 100%;
   height: auto;
+
   display: block;
-  object-fit: contain;
-  max-height: 98vh;
+
+  border-radius: 15px;
 }
 
 /* ---------- TEXT ---------- */
