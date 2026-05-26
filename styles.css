@@ -53,14 +53,14 @@ body {
 
 .card {
   width: 90%;
-  max-width: 500px;
+  max-width: 425px;
 
   margin: 30px auto;
   padding: 15px;
 
   background-color: #bfe4ef;
 
-  border-radius: 25px;
+  border-radius: 20px;
 
   text-align: center;
 
@@ -76,12 +76,15 @@ body {
 /* ---------- IMAGE ---------- */
 
 .card-image {
-  width: 100%;
+  width: 82%;
   height: auto;
-
+  max-height: 85vh;
+  max-width: 425px;
   display: block;
 
   border-radius: 15px;
+  
+  margin: 0 auto;
 }
 
 /* ---------- TEXT ---------- */
@@ -116,5 +119,17 @@ body {
  
    .share-btn:active {
    	transform: scale(0.97);
+   }
+   
+   h1 {
+   	text-shadow: 3px 3px 8px rgba(0,0,0,0.45);
+   }
+   
+   h3 {
+   	text-shadow: 3px 3px 8px rgba(0,0,0,0.45);
+   }
+   
+   p {
+   	text-shadow: 3px 3px 8px rgba(0,0,0,0.35);
    }
   
