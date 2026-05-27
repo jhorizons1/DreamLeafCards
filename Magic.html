@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Birthday in Space</title>
+  <title>Magic Moments</title>
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -14,15 +14,16 @@
   <div class="card share-card">
 
     <img
-      src="SpaceBirthday.png"
-      alt="Space birthday card"
-      class="card-image verticle-card"
+      src="Magic.png"
+      alt="Magic moments greeting card"
+      class="card-image"
+      
     />
 
-    <h4>&#127874;!Happy Birthday!&#127874;</h4>
+    <h4>&#129668;You make magical moments&#129668;</h4>
 
     <p class="message">
-      May your year be filled with laughter, magic, friendship, and moments that shine as brightly as the stars!
+     
     </p>
 
     <button class="share-btn" onclick="shareCard()">
@@ -37,7 +38,7 @@
       if (navigator.share) {
 
         navigator.share({
-          title: "Happy Birthday!",
+          title: "Every Moment With You",
           text: "Check out this greeting card!",
           url: window.location.href
         })
