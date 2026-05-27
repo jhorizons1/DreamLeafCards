@@ -7,15 +7,16 @@
 body {
   background: linear-gradient(to bottom, #87ceeb, #0b3d91);
 
-  font-family: Arial, sans-serif;
+  font-family: Georgia, serif;
 
   min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
+   background-image: url("Background.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
   align-items: center;
-
-  padding: 30px 20px;
+  margin: 0;   
 }
 
 /* ---------- WEBSITE TITLE ---------- */
@@ -52,23 +53,50 @@ body {
 /* ---------- INDIVIDUAL CARD ---------- */
 
 .card {
+	position: relative;
+	
+	background-image: url("CardBackground.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	color: white;
+	
   width: 90%;
   max-width: 425px;
 
   margin: 30px auto;
-  padding: 15px;
+  padding: 20px;
 
-  background-color: #bfe4ef;
-  border: 1px solid rgba(255,255,255,0.4);
-  border-radius: 20px;
+  border: 1px solid rgba(255,220,180,0.25);
+  border-radius: 22px;
 
   text-align: center;
 
-  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.3),
-                            0 10px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0  0 25px rgba(255, 180, 120, 0.18);
+                           
 
   overflow: hidden;
 }
+
+.card::before {
+	content: "";
+	
+	position: absolute;
+	inset: 0;
+	
+	background:
+	    linear-gradient(rgba(15, 8, 30, 0.55),
+	    rgba(25, 12, 45, 0.65)
+	 );
+	
+	z-index: 0;
+	}
+	
+	.card * {
+		position: relative;
+		z-index: 1;
+		}
  transition: 0.3s ease;
 .card:hover {
   transform: translate(-6px) scale(1.02);
