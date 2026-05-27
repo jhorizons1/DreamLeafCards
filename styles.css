@@ -18,6 +18,8 @@ body {
    background-attachment: fixed;
   align-items: center;
   margin: 0;   
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* ---------- WEBSITE TITLE ---------- */
@@ -142,7 +144,9 @@ body {
   }
   
   .share-btn {
-  	background: linear-gradient(180deg,#67d4ff, #3ba7f5);
+  	background: linear-gradient(180deg, rgba(70, 35, 110, 0.95),
+                  rgba(30, 15, 55, 0.95)
+                  );
       color: white;
       font-weight: bold;
       border: none;
@@ -153,8 +157,8 @@ body {
       position: relative;
       
       box-shadow:
-        0 7px 0 #1f78c9,
-        0 14px 24px rgba(0,0,0,0.25);
+        0 14px 24px rgba(0,0,0,0.25),
+        0 0 18px rgba(255, 200, 140, 0.18);
         
         cursor: pointer;
         
@@ -193,7 +197,8 @@ body {
    }
    
    h1 {
-   	text-shadow: 3px 3px 8px rgba(0,0,0,0.45);
+   	text-shadow: 0 0 10px rgba(255, 220, 150, 0.7,
+             0 0 20px rgba(255, 180, 100, 0.5);
    }
    
    h3 {
@@ -207,4 +212,17 @@ body {
    .share-card {
    	max-width: 700px;
    }
+   
+   nav a {
+   	color: #ffdca8;
+       text-decoration: none;
+       margin: 0 10px;
+       font-size: 1.1rem;
+       }
+       
+       nav a:hover {
+       	color: white;
+       }
+       
+    
   
